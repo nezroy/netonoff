@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/netonoff.css"/>
+
+    <title>Net On/Off Controller</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Internet Controller</h2>
+            </div>
+        </div>
+        <div id="alldevices" class="row mt-3">
+            <div class="col-6 align-self-center text-right">
+                <button type="button" class="btn btn-primary btn-lg btn-allon">Enable All</button>
+            </div>
+            <div class="col-6 align-self-center">
+                <button type="button" class="btn btn-primary btn-lg btn-alloff">Disable All</button>
+            </div>    
+        </div>
+        <div id="allspinner" class="row mt-3">
+            <div class="col align-self-center text-center">
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/netonoff.js"></script>
+
+</body>
+</html>

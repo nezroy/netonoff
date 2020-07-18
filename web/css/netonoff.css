@@ -1,0 +1,19 @@
+div.devices-odd {
+    background-color: --dark;
+}
+
+.btn-secondary.btn-devon:not([disabled]):not(.disabled).active {
+    background-image: linear-gradient(#4e9458, #569b60 40%, #5b9165);
+}
+
+.btn-secondary.btn-devoff:not([disabled]):not(.disabled).active {
+    background-image: linear-gradient(#9e5458, #865b60 40%, #8b6165);
+}
+
+.btn-primary.btn-allon {
+    background-image: linear-gradient(#489e55, #3A9F44 60%, #319539);    
+}
+
+.btn-primary.btn-alloff {
+    background-image: linear-gradient(#984e55, #8A3F44 60%, #813539);    
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Net On/Off Controller</display-name>
+    <description>
+	Allows parents to turn the internet on and off for devices by MAC.
+    </description>
+    
+	<resource-ref>
+    	<res-ref-name>jdbc/sqlite/netonoff</res-ref-name>
+    	<res-type>javax.sql.DataSource</res-type>
+    	<res-auth>Application</res-auth>
+	</resource-ref>    
+
+    <servlet>
+        <servlet-name>API</servlet-name>
+        <servlet-class>com.row33.APIServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>API</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>

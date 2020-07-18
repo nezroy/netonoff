@@ -1,0 +1,7 @@
+<Context>
+    <Resource name="jdbc/sqlite/netonoff"
+    type="javax.sql.DataSource"
+    driverClassName="org.sqlite.JDBC"
+    url="jdbc:sqlite:/srv/netonoff/netonoff.db"
+    />
+</Context>
